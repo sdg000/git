@@ -9,42 +9,42 @@ if not , then exit.
 
 
 #SECOND EDIT BEING COMMITED
+def OddEvenrange():
+    LowerL=input('enter a lower limit:  ')
 
-LowerL=input('enter a lower limit:  ')
+    UpperL=input('enter upper limit:  ')
 
-UpperL=input('enter upper limit:  ')
-
-RangeOption=raw_input('do you prefer your range odd or even ?   ODD/EVEN ')
+    RangeOption=raw_input('do you prefer your range odd or even ?   ODD/EVEN ')
 
 
-if LowerL%2!=0 and RangeOption=='ODD':
-    print range(LowerL,UpperL,2)
+    if LowerL%2!=0 and RangeOption=='ODD':
+        print range(LowerL,UpperL,2)
 
-elif LowerL%2==0 and RangeOption=='ODD':
-    print range(LowerL+1,UpperL,2)
+    elif LowerL%2==0 and RangeOption=='ODD':
+        print range(LowerL+1,UpperL,2)
 
-elif LowerL%2==0 and RangeOption=='EVEN':
-    print range(LowerL,UpperL,2)
+    elif LowerL%2==0 and RangeOption=='EVEN':
+        print range(LowerL,UpperL,2)
 
-elif LowerL%2!=0 and RangeOption=='EVEN':
-    print range(LowerL+1,UpperL,2)
+    elif LowerL%2!=0 and RangeOption=='EVEN':
+        print range(LowerL+1,UpperL,2)
 
-else:
-    print('your ranges are stupid')
+    else:
+        print('your ranges are stupid')
 
+OddEvenrange()
 
 RESTART =raw_input('wanna go again ?   YES/NO ')
 
 if RESTART=='YES':
-    print('I would have to call something to make the whole process start again. AM TOO TIRED')
-
+    OddEvenrange()
+    
 elif RESTART=='NO':
+    print('thank you for using the program')
     exit()
 
 else:
     print('your ranges are stupid')
-
-
 
 
     
